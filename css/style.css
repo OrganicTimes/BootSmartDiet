@@ -1,0 +1,685 @@
+:root {
+    --color1: aliceblue;
+    --color2: lightgrey;
+    --background-color: lightgrey;
+}
+
+@font-face {
+    font-family: 'RobotoThin', sans-serif;
+    src: url('../fonts/Roboto-Thin.ttf');
+    font-display: swap;
+    font-weight: 1300;
+}
+
+@font-face {
+    font-family: 'RobotoBold', sans-serif;
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-display: swap;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'RobotoRegular', sans-serif;
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-display: swap;
+    font-weight: 400;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: darkgreen;
+    height: 100%!important;
+}
+
+body {
+    height: 100%!important;
+}
+
+
+/* здесь про cookies */
+
+.modal-my-firstForm-cookies {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.modal-my-dialog-cookies {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 5px 5px;
+    color: green;
+}
+
+.modal-my-header {
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal-p-cookies {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px;
+}
+
+.p-my-cookies {
+    margin: 0px 0px;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    ;
+}
+
+.modal-my-cookies {
+    font-size: 18px;
+}
+
+.btn-my-cookies {
+    width: 80px;
+    height: 50px;
+    margin: 0px 5px;
+}
+
+
+/* здесь стилизация popup */
+
+.modal-my-firstForm {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: none;
+    display: block;
+    transform: translateY(-44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+
+.activeModal {
+    transform: translateY(0%) scale(100%);
+}
+
+.modal-my-dialog {
+    display: flex;
+}
+
+.modal-my-title-firstpopup {
+    color: green;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.p-my-firstpopup {
+    color: green;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.8;
+}
+
+
+/* здесь стилизация на странице форм */
+
+.content-my-finalSend {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/bg-form.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--color1);
+    display: table-row;
+    height: 100%;
+    width: 100%;
+}
+
+.h1-my-title-h1-finalMassage {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.p-my-title-finalPage {
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding-bottom: 0px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2;
+}
+
+.row-my-modal1 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container-my-sendEmail {
+    margin: 40px 0px;
+}
+
+.btn-my-finalPage {
+    width: 100px;
+    padding: 12px 12px;
+    margin: 40px auto;
+    border-radius: 5px;
+}
+
+.btn-my-finalPage:hover {
+    background-color: transparent;
+    color: var(--color1);
+}
+
+.content-my-sovety {
+    color: var(--color1);
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../img/bg-form.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-top: 60px;
+    display: table-row;
+    width: 100%;
+    height: 100%;
+}
+
+.label-my-form {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-my-check-label {
+    cursor: pointer;
+}
+
+.form-chek-my-form {
+    font-size: 19px;
+    margin: 20px 0;
+}
+
+.fieldset-my-form {
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.btn-my-form1 {
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    margin: 0px auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-weight: 400;
+    display: block;
+}
+
+.btn-my-form1:hover {
+    background-color: whitesmoke;
+    color: green;
+    box-shadow: 0px 0px 21px 0px white;
+}
+
+.btn-my-secondary {
+    margin: 0px auto;
+    width: 80px;
+}
+
+.p-my-forms {
+    font-size: 20px;
+    line-height: 2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-chek-my-form2 {
+    font-size: 18px;
+    line-height: 2;
+    padding-left: 0px;
+}
+
+.form-my-form2-email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.email-my-form {
+    margin: 70px auto;
+    width: 270px;
+    line-height: 2;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    color: green;
+}
+
+.btn-my-form2 {
+    padding: 15px 50px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    margin: 15px auto;
+    font-weight: 400;
+    display: block;
+}
+
+.btn-my-form2:hover {
+    background-color: whitesmoke;
+    color: green;
+    box-shadow: 0px 0px 21px 0px white;
+}
+
+.form-my-check-input[type=radio] {
+    background-color: white;
+}
+
+.form-my-check-input:checked[type=radio] {
+    background-color: rebeccapurple;
+    border-color: lightgreen;
+}
+
+
+/* здесь стили для копки НАВЕРХ */
+
+#buttonUp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgba(0, 200, 0, 0.4);
+    cursor: pointer;
+    border-radius: 50%;
+    display: none;
+}
+
+#buttonUp:hover {
+    background: green;
+}
+
+.my-arrow-up {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    top: 4px;
+}
+
+
+/* здесь стили О нас */
+
+.ul-my-onas {
+    font-size: 20px;
+    line-height: 3;
+}
+
+.p-my-onas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.li-my-onas {
+    font-size: 19px;
+    line-height: 2;
+}
+
+.h2-my-onas {
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+.div-my-img-onas {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.a-my-resourses {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.a-my-resourses:hover {
+    color: lightseagreen;
+    text-decoration: none;
+}
+
+
+/* здесь начинается контент на главной */
+
+.content {
+    color: var(--color1);
+    padding-top: 160px;
+    padding-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../img/mainbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.website-my-title {
+    color: var(--color1);
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 100px;
+    letter-spacing: 5px;
+}
+
+.main-text-my-content {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    line-height: 1.8;
+}
+
+.test-text-my-content {
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.a-div {
+    display: flex;
+    justify-content: center;
+}
+
+.test-button {
+    background-color: transparent;
+    width: 290px;
+    height: 66px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 30px 0px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-button {
+    background-color: transparent;
+    width: 250px;
+    font-size: 18px;
+    height: 60px;
+    color: aliceblue;
+    border-radius: 10px;
+    margin: 30px 10px;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-my-container {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* здесь для политики к. */
+
+.content-my-policy {
+    background-color: aliceblue;
+    display: table-row;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* здесь начинается органика */
+
+.col-12-my-policy-p {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.col-12-my-policy-h1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+/* этот класс для органики */
+
+.content-usual {
+    background-color: aliceblue;
+    display: table-row;
+    width: 100%;
+    height: 100%;
+}
+
+.h1-my-title {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.p-my-title {
+    margin-bottom: 80px;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.p-my-title-sovety {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.5;
+}
+
+.container-my-content {
+    padding: 0px 10px;
+}
+
+.my-card {
+    margin: 10px;
+    background-color: white !important;
+}
+
+.card-my-bg-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/water.jpg);
+}
+
+.card-my-bg-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/eggs.jpg);
+}
+
+.card-my-bg-3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/coffee.jpg);
+}
+
+.card-my-bg-4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/greenteaRules.jpg);
+}
+
+.card-my-bg-5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/diet.jpg);
+}
+
+.card-my-bg-6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/gluko.jpg);
+}
+
+.card-my-bg-7 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/sugar.jpg);
+}
+
+.card-my-bg-8 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/smallportions.jpg);
+}
+
+.card-my-bg-9 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/capsules.jpg);
+}
+
+.card-my-bg-10 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/pepper.jpg);
+}
+
+.card-my-bg-11 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/kletchatka.jpg);
+}
+
+.card-my-bg-12 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/vegetables.jpg);
+}
+
+.card-my-bg-13 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/sleep.jpg);
+}
+
+.card-my-bg-14 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/drink.jpg);
+}
+
+.card-my-bg-15 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/chewing.jpg);
+}
+
+.card-my-whole {
+    margin-bottom: 20px;
+}
+
+.card-my-bg {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.rules-my-card {
+    color: white;
+    margin: 10px;
+}
+
+.rules-my-hr {
+    color: white;
+    text-align: center;
+    height: 1px !important;
+    opacity: 1;
+}
+
+.p-my-rules {
+    font-size: 18px;
+}
+
+.card-my-title-rules {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.card-my-title {
+    font-weight: 700;
+}
+
+.divider-my-content {
+    width: 70%;
+    color: darkgreen;
+    margin: 20px 25% 20px 25%;
+}
+
+.img-div {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    height: 28vh;
+    max-height: 30vh;
+    border-radius: 5px;
+}
+
+.img-my-onas-ogrn {
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+/* здесь начнается футер */
+
+footer {
+    font-weight: 700;
+    background-color: black;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 0px;
+}
+
+.div-my-footer {
+    margin: 20px 0px;
+    padding-left: 0px;
+}
+
+.a-my-footer {
+    color: var(--color1);
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.a-my-footer:hover {
+    color: var(--color2);
+    cursor: pointer;
+}
+
+.i-my-footer {
+    color: darkgrey;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 0px;
+}
